@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    getGreenhouse();
+    //getGreenhouse();
+    $('.fancyknob').fancyknob();
+
 });
 
 function getGreenhouse() {
@@ -17,15 +19,14 @@ function getGreenhouse() {
             var soil_humidity = json['soil_humidity'];
             var air_pressure = json['air_pressure'];
 
-            $('#apDiv17').text(voltage);
-            $('#apDiv18').text(air_temperature);
-            $('#apDiv19').text(air_humidity);
-            $('#apDiv20').text(co2);
-            $('#apDiv21').text(sunshine);
-            $('#apDiv22').text(air_pressure);
-
-            $('#apDiv29').text(soil_temperature);
-            $('#apDiv30').text(soil_humidity);
+            $('#voltage').val(voltage);
+            $('#air_temperature').val(air_temperature);
+            $('#air_humidity').val(air_humidity);
+            $('#co2').val(co2);
+            $('#sunshine').val(sunshine);
+            $('#soil_temperature').val(soil_temperature);
+            $('#soil_humidity').val(soil_humidity);
+            $('#air_pressure').val(air_pressure);
         }
     });
     setTimeout('getGreenhouse()', 15 * 60 * 1000);

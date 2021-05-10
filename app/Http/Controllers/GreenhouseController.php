@@ -7,6 +7,12 @@ use App\Model\Greenhouse;
 
 class GreenhouseController extends Controller
 {
+    public function index()
+    {
+        $greenhouse = Greenhouse::orderBy('created_at', 'desc')->first();
+        return view('greenhouse')->with('greenhouse', $greenhouse);
+    }
+
     public function post(Request $req)
     {      
         $greenhouse = Greenhouse::create($req->all());

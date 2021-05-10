@@ -30,5 +30,5 @@ Route::get('getTemp', 'TEA\\StatusController@getTemp');
 Route::get('getBerry', 'StrawberryController@getTemp');
 Route::get('getBerryPH', 'StrawberryController@getBerryPH');
 Route::get('getBerrySunshine', 'StrawberryController@getSunshine');
-Route::get('getFarm', 'FarmController@getOne');
+Route::get('getFarm', 'FarmController@getFarm');
 Route::get('getGreenhouse', 'GreenhouseController@getOne');

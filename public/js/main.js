@@ -280,7 +280,6 @@ function phchar() {
       method: 'GET',
       dataType: 'json',
       
-
       success: function(json){
         var ctx = document.getElementById('ph-line-chart').getContext('2d');
         var myChart = new Chart(ctx, {
@@ -330,4 +329,3 @@ function phchar() {
   setTimeout('phchar()',60 * 60 * 1000);
 
 }
-

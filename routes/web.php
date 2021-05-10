@@ -33,9 +33,7 @@ Route::get('/berry', function () {
     return view('strawberry');
 });
 
-Route::get('/greenhouse', function () {
-    return view('greenhouse');
-});
+Route::get('/greenhouse', 'GreenhouseController@index');
 
 Route::get('/tea', function () {
     return view('tea');
