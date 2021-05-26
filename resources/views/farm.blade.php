@@ -64,7 +64,7 @@
     <!--link-->
 </head>
 
-<body style="background: black">
+<body style="background-image:url('{{asset('images/newbg.jpg')}}')">
     
     <section class="bg">
     <div class="cover" id="map" >
