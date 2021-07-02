@@ -49,10 +49,11 @@
     
     <section class="bg">
     <div class="cover" id="map">
+		<iframe width="100%" height="1000px" src="https://dashboard-ncyu01-ews.education.wise-paas.com/frame/%E6%BA%AB%E5%AE%A4%E7%94%9C%E6%A4%92%E5%93%81%E8%B3%AA%E7%AE%A1%E7%90%86%E7%9B%A3%E6%8E%A7%E7%B3%BB%E7%B5%B1?orgId=1&language=zh_tw&theme=gray&layout=ss">
+			你的瀏覽器不支援 iframe
+		</iframe>
         <section style="display: block; margin:80px; width:90%">
-			<iframe width="100%" height="1000px" src="https://dashboard-ncyu01-ews.education.wise-paas.com/frame/%E6%BA%AB%E5%AE%A4%E7%94%9C%E6%A4%92%E5%93%81%E8%B3%AA%E7%AE%A1%E7%90%86%E7%9B%A3%E6%8E%A7%E7%B3%BB%E7%B5%B1?orgId=1&language=zh_tw&theme=gray&layout=ss">
-				你的瀏覽器不支援 iframe
-			</iframe>
+			
 
 			<div id="apDiv2">
                 <!--menu-->
