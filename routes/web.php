@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Menu;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,27 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('info');
+    $Menu = Menu::all();
+    return view('info')->with('Menu', $Menu);
 });
 
 Route::get('/map', function () {
-    return view('index_map');
+    $Menu = Menu::all();
+    return view('index_map')->with('Menu', $Menu);
 });
 
 Route::get('/logo', function () {
-    return view('index_logo');
+    $Menu = Menu::all();
+    return view('index_logo')->with('Menu', $Menu);
 });
 
 Route::get('/farm', function () {
-    return view('farm');
+    $Menu = Menu::all();
+    return view('farm')->with('Menu', $Menu);
 });
 
 Route::get('/berry', function () {
-    return view('strawberry');
+    $Menu = Menu::all();
+    return view('strawberry')->with('Menu', $Menu);
 });
 
 Route::get('/greenhouse', 'GreenhouseController@index');
+Route::get('/page/{url}', 'PageController@getpage');
 
 Route::get('/tea', function () {
-    return view('tea');
+    $Menu = Menu::all();
+    return view('tea')->with('Menu', $Menu);
 });

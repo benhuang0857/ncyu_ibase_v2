@@ -80,13 +80,9 @@
                             <div class="fat-nav ">
                                 <div class="fat-nav__wrapper ">
                                     <ul>
-                                        <li><a href="/logo">首頁-LOGO</a></li>
-                                        <li><a href="/map ">首頁-地圖</a></li>
-                                        <li><a href="/farm ">首頁(即時資訊)-1</a></li>
-                                        <li><a href="/greenhouse ">首頁(即時資訊)-2</a></li>
-                                        <li><a href="/berry ">草莓</a></li>
-                                        <li><a href="/tea">茶葉機</a></li>
-                                        
+                                        @foreach ($Menu as $item)
+                                        <li><a href="{{$item->url}}">{{$item->name}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
